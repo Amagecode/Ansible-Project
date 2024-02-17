@@ -1,3 +1,17 @@
-etup Ansible cluster with 3 nodes
-2. On slave 1 install Java
-3. On slave 2 install MySQL server
+1. setup Ansible cluster with 3 nodes
+    1. On slave 1 install Java
+    2. On slave 2 install MySQL server
+2. Create a script which can add text “This text has been added by custom
+   Script” to /tmp.1.txt
+3. Run this script using Ansible on all the hosts
+6. Create 2 Ansible roles
+    1:Install Apache2 on slave1 using one role and NGINX on slave2 using the
+      other role
+    2: Above should be implemented using different Ansible roles
+7. Use the previous deployment of Ansible cluster
+8. Configure the files folder in the role with index.html which should be
+   replaced with the original index.html
+9. Create a new deployment of Ansible cluster of 5 nodes
+    1. Label 2 nodes as test and other 2 as prod
+    2. Install Java on test nodes
+    3. Install MySQL server on prod nodes
